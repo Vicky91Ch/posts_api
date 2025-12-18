@@ -2,7 +2,10 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): any {
+  getHealth(): any {
+    throw new Error('Method not implemented.');
+  }
+  getHel(): any {
     return {
       success:true,
       message:'Vicky91Ch-posts-api on line',
