@@ -1,16 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { version } from 'os';
 
 @Injectable()
 export class AppService {
-  getHealth(): any {
-    throw new Error('Method not implemented.');
-  }
-  getHel(): any {
+
+  gethealth(): any {
     return {
-      success:true,
-      message:'Vicky91Ch-posts-api on line',
-      data: 'Sistema Posts API',
-      version: '1.0.0.',
-      }
-    }
+      success: true,
+      message: 'Venegas posts api health ',
+      data: "Sistema Posts Api",
+      version: '1.0.0',
+    };
+  }
 }

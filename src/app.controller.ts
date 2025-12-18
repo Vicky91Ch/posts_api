@@ -4,9 +4,10 @@ import { AppService } from './app.service';
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
+""
 
-  @Get('health')
+  @Get('health') // ruta '/health'
   getHealth(): any {
-    return this.appService.getHealth();
+    return this.appService.gethealth();
   }
 }
